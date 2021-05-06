@@ -72,6 +72,9 @@
 		A9FCC2D3264424B500BDF73F /* Intersecting_Layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intersecting_Layers.png; sourceTree = "<group>"; };
 		A9FCC2D426442AAF00BDF73F /* original_abandoned_cube_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = original_abandoned_cube_layout.png; sourceTree = "<group>"; };
 		A9FCC2D526442CA800BDF73F /* side4_broken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side4_broken.png; sourceTree = "<group>"; };
+		A9FCC2D6264454E100BDF73F /* anchor_points.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchor_points.png; sourceTree = "<group>"; };
+		A9FCC2D7264454E100BDF73F /* anchor_points1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchor_points1.png; sourceTree = "<group>"; };
+		A9FCC2D826445A7000BDF73F /* 3DCube_Wrong_on_The_mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3DCube_Wrong_on_The_mac.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,9 @@
 		A9D845BD26440B0C00470DD6 /* DemoImages */ = {
 			isa = PBXGroup;
 			children = (
+				A9FCC2D826445A7000BDF73F /* 3DCube_Wrong_on_The_mac.png */,
+				A9FCC2D6264454E100BDF73F /* anchor_points.png */,
+				A9FCC2D7264454E100BDF73F /* anchor_points1.png */,
 				A9FCC2D426442AAF00BDF73F /* original_abandoned_cube_layout.png */,
 				A9FCC2D3264424B500BDF73F /* Intersecting_Layers.png */,
 				A9FCC2D526442CA800BDF73F /* side4_broken.png */,
