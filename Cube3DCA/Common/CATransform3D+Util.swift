@@ -62,6 +62,22 @@ public extension CATransform3D {
 // MARK: -
 // MARK: 3D Cube -
 
+//         +-------+
+//         |       |
+//         |   5   |
+//         |       |
+//         +-------+
+//+-------++-------++-------+
+//|       ||       ||       |
+//|   1   ||  2/4  ||   3   |
+//|       ||       ||       |
+//+-------++-------++-------+
+//         +-------+
+//         |       |
+//         |   6   |
+//         |       |
+//         +-------+
+
 public extension CATransform3D {
   static func transformFor3DCubeSide(_ number: Int, zWidth: CGFloat) -> CATransform3D {
     
@@ -70,22 +86,22 @@ public extension CATransform3D {
     
     switch number {
       case 1:
-        trans = CATransform3DMakeRotation(halfPi, 0, 1, 0) // 1 -
+        trans = CATransform3DMakeRotation(halfPi, 0, 1, 0) // 1 - rotated +90° on the `Y` axes
         break
       case 2:
         trans = CATransform3DIdentity // 2 - stays the same
         break
       case 3:
-        trans = CATransform3DMakeRotation(-halfPi, 0, 1, 0) // 3
+        trans = CATransform3DMakeRotation(-halfPi, 0, 1, 0) // 3 - rotated -90° on the `Y` axes
         break
       case 4:
-        trans = CATransform3DMakeTranslation(0, 0, zWidth)
+        trans = CATransform3DMakeTranslation(0, 0, zWidth) // same as setting the `zPosition`, brogt up-front by the `width`, side of our cube
         break
       case 5:
-        trans = CATransform3DMakeRotation(-halfPi, 1, 0, 0) // 5
+        trans = CATransform3DMakeRotation(-halfPi, 1, 0, 0) // 5 - rotated -90° on the `X` axes
         break
       case 6:
-        trans = CATransform3DMakeRotation(halfPi, 1, 0, 0) // 6
+        trans = CATransform3DMakeRotation(halfPi, 1, 0, 0) // 6 - rotated +90° on the `X` axes
         break
       default:
         break

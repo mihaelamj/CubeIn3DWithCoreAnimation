@@ -35,8 +35,6 @@
 		A9D845A92643FEF900470DD6 /* CGPoint+Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */; };
 		A9D845AA2643FEF900470DD6 /* CGPoint+Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */; };
 		A9D845AD2644042800470DD6 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A9D845AC2644042800470DD6 /* AllApples */; };
-		A9D845B02644088800470DD6 /* cube_3D_messed_up.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */; };
-		A9D845B12644088800470DD6 /* cube_flat_messed_up.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */; };
 		A9D845BF26440B9E00470DD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D845BE26440B9E00470DD6 /* README.md */; };
 		A9D845C026440B9E00470DD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D845BE26440B9E00470DD6 /* README.md */; };
 /* End PBXBuildFile section */
@@ -64,8 +62,6 @@
 		A9D845A22643FE6D00470DD6 /* AView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AView+Custom.swift"; sourceTree = "<group>"; };
 		A9D845A52643FEC800470DD6 /* AColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AColor+Custom.swift"; sourceTree = "<group>"; };
 		A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Cube.swift"; sourceTree = "<group>"; };
-		A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube_3D_messed_up.png; path = ../../../../../Desktop/cube_3D_messed_up.png; sourceTree = "<group>"; };
-		A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube_flat_messed_up.png; path = ../../../../../Desktop/cube_flat_messed_up.png; sourceTree = "<group>"; };
 		A9D845B826440ADD00470DD6 /* cube_iOS_flat_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_flat_1.png; sourceTree = "<group>"; };
 		A9D845B926440ADD00470DD6 /* cube_iOS_flat_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_flat_2.png; sourceTree = "<group>"; };
 		A9D845BA26440ADD00470DD6 /* cube_iOS_3D_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_3D_.png; sourceTree = "<group>"; };
@@ -98,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D845BE26440B9E00470DD6 /* README.md */,
-				A9D845BD26440B0C00470DD6 /* Demo Images */,
+				A9D845BD26440B0C00470DD6 /* DemoImages */,
 				A9D845952643FA8200470DD6 /* Common */,
 				A9D845632643F86B00470DD6 /* Cube3DCAMac */,
 				A9D8457A2643F8E400470DD6 /* Cube3DMobile */,
@@ -120,8 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				A9D8458D2643F92300470DD6 /* main.swift */,
-				A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */,
-				A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */,
 				A9D845642643F86B00470DD6 /* AppDelegate.swift */,
 				A9D845662643F86D00470DD6 /* Assets.xcassets */,
 				A9D845682643F86D00470DD6 /* MainMenu.xib */,
@@ -166,7 +160,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A9D845BD26440B0C00470DD6 /* Demo Images */ = {
+		A9D845BD26440B0C00470DD6 /* DemoImages */ = {
 			isa = PBXGroup;
 			children = (
 				A9D845B826440ADD00470DD6 /* cube_iOS_flat_1.png */,
@@ -175,7 +169,7 @@
 				A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */,
 				A9D845BB26440B0300470DD6 /* cube_macOS_3D_messed_up.png */,
 			);
-			path = "Demo Images";
+			path = DemoImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +262,6 @@
 				A9D845672643F86D00470DD6 /* Assets.xcassets in Resources */,
 				A9D8456A2643F86D00470DD6 /* MainMenu.xib in Resources */,
 				A9D845BF26440B9E00470DD6 /* README.md in Resources */,
-				A9D845B02644088800470DD6 /* cube_3D_messed_up.png in Resources */,
-				A9D845B12644088800470DD6 /* cube_flat_messed_up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
