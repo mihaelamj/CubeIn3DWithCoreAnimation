@@ -24,4 +24,14 @@ As you can see here:
 
 ![Cube 3D Animating](../main/Cube3DCA/DemoImages/CoreAnimation_3D_Cube.gif)
 
+The `macOS` version does not work yet.
+I guess the `sublayerTransform` property is not working, and the transforms don't look the same.
+
+The flattened version does not respect anchor points and positions.
+
+![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_flat_messed_up.gif)
+
+The 3D version is transformed incorrectly.
+
+![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_3D_messed_up.gif)
 
