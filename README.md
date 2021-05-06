@@ -29,9 +29,9 @@ I guess the `sublayerTransform` property is not working, and the transforms don'
 
 The flattened version does not respect anchor points and positions.
 
-![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_flat_messed_up.gif)
+![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_flat_messed_up.png)
 
 The 3D version is transformed incorrectly.
 
-![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_3D_messed_up.gif)
+![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_3D_messed_up.png)
 
