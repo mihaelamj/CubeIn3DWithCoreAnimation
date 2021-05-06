@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9D845652643F86B00470DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845642643F86B00470DD6 /* AppDelegate.swift */; };
+		A9D845672643F86D00470DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D845662643F86D00470DD6 /* Assets.xcassets */; };
+		A9D8456A2643F86D00470DD6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D845682643F86D00470DD6 /* MainMenu.xib */; };
+		A9D845742643F8C200470DD6 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A9D845732643F8C200470DD6 /* AllApples */; };
+		A9D8457C2643F8E400470DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8457B2643F8E400470DD6 /* AppDelegate.swift */; };
+		A9D8457E2643F8E400470DD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8457D2643F8E400470DD6 /* SceneDelegate.swift */; };
+		A9D845852643F8E600470DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D845842643F8E600470DD6 /* Assets.xcassets */; };
+		A9D845882643F8E600470DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D845862643F8E600470DD6 /* LaunchScreen.storyboard */; };
+		A9D8458E2643F92300470DD6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8458D2643F92300470DD6 /* main.swift */; };
+		A9D845902643F96600470DD6 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8458F2643F96600470DD6 /* CommonViewController.swift */; };
+		A9D845912643F96600470DD6 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8458F2643F96600470DD6 /* CommonViewController.swift */; };
+		A9D845932643FA0400470DD6 /* CATransform3D+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */; };
+		A9D845942643FA0400470DD6 /* CATransform3D+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */; };
+		A9D845972643FAEE00470DD6 /* CACube3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845962643FAEE00470DD6 /* CACube3DView.swift */; };
+		A9D845982643FAEE00470DD6 /* CACube3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845962643FAEE00470DD6 /* CACube3DView.swift */; };
+		A9D8459A2643FBA600470DD6 /* PlainLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845992643FBA600470DD6 /* PlainLayerView.swift */; };
+		A9D8459B2643FBA600470DD6 /* PlainLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845992643FBA600470DD6 /* PlainLayerView.swift */; };
+		A9D8459D2643FBF100470DD6 /* GestureRecognizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8459C2643FBF100470DD6 /* GestureRecognizerView.swift */; };
+		A9D8459E2643FBF100470DD6 /* GestureRecognizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8459C2643FBF100470DD6 /* GestureRecognizerView.swift */; };
+		A9D845A02643FD4900470DD6 /* CustomLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8459F2643FD4900470DD6 /* CustomLayerView.swift */; };
+		A9D845A12643FD4900470DD6 /* CustomLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8459F2643FD4900470DD6 /* CustomLayerView.swift */; };
+		A9D845A32643FE6D00470DD6 /* AView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A22643FE6D00470DD6 /* AView+Custom.swift */; };
+		A9D845A42643FE6D00470DD6 /* AView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A22643FE6D00470DD6 /* AView+Custom.swift */; };
+		A9D845A62643FEC800470DD6 /* AColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A52643FEC800470DD6 /* AColor+Custom.swift */; };
+		A9D845A72643FEC800470DD6 /* AColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A52643FEC800470DD6 /* AColor+Custom.swift */; };
+		A9D845A92643FEF900470DD6 /* CGPoint+Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */; };
+		A9D845AA2643FEF900470DD6 /* CGPoint+Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9D845612643F86B00470DD6 /* Cube3DCAMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube3DCAMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D845642643F86B00470DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9D845662643F86D00470DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9D845692643F86D00470DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A9D8456B2643F86D00470DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D8456C2643F86D00470DD6 /* Cube3DCAMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cube3DCAMac.entitlements; sourceTree = "<group>"; };
+		A9D845792643F8E400470DD6 /* Cube3DMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube3DMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D8457B2643F8E400470DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9D8457D2643F8E400470DD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9D845842643F8E600470DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9D845872643F8E600470DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9D845892643F8E600470DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D8458D2643F92300470DD6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A9D8458F2643F96600470DD6 /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransform3D+Util.swift"; sourceTree = "<group>"; };
+		A9D845962643FAEE00470DD6 /* CACube3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CACube3DView.swift; sourceTree = "<group>"; };
+		A9D845992643FBA600470DD6 /* PlainLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainLayerView.swift; sourceTree = "<group>"; };
+		A9D8459C2643FBF100470DD6 /* GestureRecognizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerView.swift; sourceTree = "<group>"; };
+		A9D8459F2643FD4900470DD6 /* CustomLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayerView.swift; sourceTree = "<group>"; };
+		A9D845A22643FE6D00470DD6 /* AView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AView+Custom.swift"; sourceTree = "<group>"; };
+		A9D845A52643FEC800470DD6 /* AColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AColor+Custom.swift"; sourceTree = "<group>"; };
+		A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Cube.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9D8455E2643F86B00470DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D845742643F8C200470DD6 /* AllApples in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D845762643F8E400470DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9D845582643F86B00470DD6 = {
+			isa = PBXGroup;
+			children = (
+				A9D845952643FA8200470DD6 /* Common */,
+				A9D845632643F86B00470DD6 /* Cube3DCAMac */,
+				A9D8457A2643F8E400470DD6 /* Cube3DMobile */,
+				A9D845622643F86B00470DD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D845622643F86B00470DD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D845612643F86B00470DD6 /* Cube3DCAMac.app */,
+				A9D845792643F8E400470DD6 /* Cube3DMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9D845632643F86B00470DD6 /* Cube3DCAMac */ = {
+			isa = PBXGroup;
+			children = (
+				A9D8458D2643F92300470DD6 /* main.swift */,
+				A9D845642643F86B00470DD6 /* AppDelegate.swift */,
+				A9D845662643F86D00470DD6 /* Assets.xcassets */,
+				A9D845682643F86D00470DD6 /* MainMenu.xib */,
+				A9D8456B2643F86D00470DD6 /* Info.plist */,
+				A9D8456C2643F86D00470DD6 /* Cube3DCAMac.entitlements */,
+			);
+			path = Cube3DCAMac;
+			sourceTree = "<group>";
+		};
+		A9D8457A2643F8E400470DD6 /* Cube3DMobile */ = {
+			isa = PBXGroup;
+			children = (
+				A9D8457B2643F8E400470DD6 /* AppDelegate.swift */,
+				A9D8457D2643F8E400470DD6 /* SceneDelegate.swift */,
+				A9D845842643F8E600470DD6 /* Assets.xcassets */,
+				A9D845862643F8E600470DD6 /* LaunchScreen.storyboard */,
+				A9D845892643F8E600470DD6 /* Info.plist */,
+			);
+			path = Cube3DMobile;
+			sourceTree = "<group>";
+		};
+		A9D845952643FA8200470DD6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */,
+				A9D845A22643FE6D00470DD6 /* AView+Custom.swift */,
+				A9D845A52643FEC800470DD6 /* AColor+Custom.swift */,
+				A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */,
+				A9D8458F2643F96600470DD6 /* CommonViewController.swift */,
+				A9D845992643FBA600470DD6 /* PlainLayerView.swift */,
+				A9D8459C2643FBF100470DD6 /* GestureRecognizerView.swift */,
+				A9D8459F2643FD4900470DD6 /* CustomLayerView.swift */,
+				A9D845962643FAEE00470DD6 /* CACube3DView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9D845602643F86B00470DD6 /* Cube3DCAMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D8456F2643F86D00470DD6 /* Build configuration list for PBXNativeTarget "Cube3DCAMac" */;
+			buildPhases = (
+				A9D8455D2643F86B00470DD6 /* Sources */,
+				A9D8455E2643F86B00470DD6 /* Frameworks */,
+				A9D8455F2643F86B00470DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cube3DCAMac;
+			packageProductDependencies = (
+				A9D845732643F8C200470DD6 /* AllApples */,
+			);
+			productName = Cube3DCAMac;
+			productReference = A9D845612643F86B00470DD6 /* Cube3DCAMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9D845782643F8E400470DD6 /* Cube3DMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D8458A2643F8E600470DD6 /* Build configuration list for PBXNativeTarget "Cube3DMobile" */;
+			buildPhases = (
+				A9D845752643F8E400470DD6 /* Sources */,
+				A9D845762643F8E400470DD6 /* Frameworks */,
+				A9D845772643F8E400470DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cube3DMobile;
+			productName = Cube3DMobile;
+			productReference = A9D845792643F8E400470DD6 /* Cube3DMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9D845592643F86B00470DD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A9D845602643F86B00470DD6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					A9D845782643F8E400470DD6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A9D8455C2643F86B00470DD6 /* Build configuration list for PBXProject "Cube3DCAMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9D845582643F86B00470DD6;
+			packageReferences = (
+				A9D845722643F8C200470DD6 /* XCRemoteSwiftPackageReference "allapples" */,
+			);
+			productRefGroup = A9D845622643F86B00470DD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9D845602643F86B00470DD6 /* Cube3DCAMac */,
+				A9D845782643F8E400470DD6 /* Cube3DMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9D8455F2643F86B00470DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D845672643F86D00470DD6 /* Assets.xcassets in Resources */,
+				A9D8456A2643F86D00470DD6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D845772643F8E400470DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D845882643F8E600470DD6 /* LaunchScreen.storyboard in Resources */,
+				A9D845852643F8E600470DD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9D8455D2643F86B00470DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D8459A2643FBA600470DD6 /* PlainLayerView.swift in Sources */,
+				A9D845902643F96600470DD6 /* CommonViewController.swift in Sources */,
+				A9D8458E2643F92300470DD6 /* main.swift in Sources */,
+				A9D845A02643FD4900470DD6 /* CustomLayerView.swift in Sources */,
+				A9D845652643F86B00470DD6 /* AppDelegate.swift in Sources */,
+				A9D8459D2643FBF100470DD6 /* GestureRecognizerView.swift in Sources */,
+				A9D845A62643FEC800470DD6 /* AColor+Custom.swift in Sources */,
+				A9D845972643FAEE00470DD6 /* CACube3DView.swift in Sources */,
+				A9D845A92643FEF900470DD6 /* CGPoint+Cube.swift in Sources */,
+				A9D845932643FA0400470DD6 /* CATransform3D+Util.swift in Sources */,
+				A9D845A32643FE6D00470DD6 /* AView+Custom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D845752643F8E400470DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D8459B2643FBA600470DD6 /* PlainLayerView.swift in Sources */,
+				A9D845912643F96600470DD6 /* CommonViewController.swift in Sources */,
+				A9D8457C2643F8E400470DD6 /* AppDelegate.swift in Sources */,
+				A9D845A12643FD4900470DD6 /* CustomLayerView.swift in Sources */,
+				A9D8457E2643F8E400470DD6 /* SceneDelegate.swift in Sources */,
+				A9D8459E2643FBF100470DD6 /* GestureRecognizerView.swift in Sources */,
+				A9D845A72643FEC800470DD6 /* AColor+Custom.swift in Sources */,
+				A9D845982643FAEE00470DD6 /* CACube3DView.swift in Sources */,
+				A9D845AA2643FEF900470DD6 /* CGPoint+Cube.swift in Sources */,
+				A9D845942643FA0400470DD6 /* CATransform3D+Util.swift in Sources */,
+				A9D845A42643FE6D00470DD6 /* AView+Custom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9D845682643F86D00470DD6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D845692643F86D00470DD6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A9D845862643F8E600470DD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D845872643F8E600470DD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9D8456D2643F86D00470DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9D8456E2643F86D00470DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A9D845702643F86D00470DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cube3DCAMac/Cube3DCAMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Cube3DCAMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DCAMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9D845712643F86D00470DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cube3DCAMac/Cube3DCAMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Cube3DCAMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DCAMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A9D8458B2643F8E600470DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				INFOPLIST_FILE = Cube3DMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9D8458C2643F8E600470DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				INFOPLIST_FILE = Cube3DMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9D8455C2643F86B00470DD6 /* Build configuration list for PBXProject "Cube3DCAMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D8456D2643F86D00470DD6 /* Debug */,
+				A9D8456E2643F86D00470DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D8456F2643F86D00470DD6 /* Build configuration list for PBXNativeTarget "Cube3DCAMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D845702643F86D00470DD6 /* Debug */,
+				A9D845712643F86D00470DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D8458A2643F8E600470DD6 /* Build configuration list for PBXNativeTarget "Cube3DMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D8458B2643F8E600470DD6 /* Debug */,
+				A9D8458C2643F8E600470DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9D845722643F8C200470DD6 /* XCRemoteSwiftPackageReference "allapples" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mihaelamj/allapples";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9D845732643F8C200470DD6 /* AllApples */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9D845722643F8C200470DD6 /* XCRemoteSwiftPackageReference "allapples" */;
+			productName = AllApples;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9D845592643F86B00470DD6 /* Project object */;
+}
