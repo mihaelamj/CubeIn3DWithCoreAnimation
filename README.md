@@ -2,7 +2,7 @@
 
 A demo of 3D cube done purely in Core Animation
 
-It uses  [AllApples](https://github.com/mihaelamj/allapples) Swift package, to enable the example to work both on *iOS` devices ans well as on the *Mac*.
+It uses  [AllApples](https://github.com/mihaelamj/allapples) Swift package, to enable the example to work both on *iOS` devices and on the *Mac*.
 
 Well, that din't work out great, for I still have to make the Mac version to work correctly.
 
@@ -35,3 +35,6 @@ The 3D version is transformed incorrectly.
 
 ![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_3D_messed_up.png)
 
+Forks and PRs are more than welcome!!
+
+[Here's the link to YouTube]( https://www.youtube.com/watch?v=exIGbi36_bk)
