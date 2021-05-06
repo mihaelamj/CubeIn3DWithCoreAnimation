@@ -33,6 +33,50 @@ extension AView {
     view.layer?.position = myAnchorPointAndPosition.position
     #endif
     
+    //         +-------+
+    //         |       |
+    //         |   5   |
+    //         |       |
+    //         +-------+
+    //+-------++-------++-------++-------+
+    //|       ||       ||       ||       |
+    //|   1   ||   2   ||   3   ||   4   |
+    //|       ||       ||       ||       |
+    //+-------++-------++-------++-------+
+    //         +-------+
+    //         |       |
+    //         |   6   |
+    //         |       |
+    //         +-------+
+    
+    // INFO: Put layer 4 in fron of layer 2, instead of as in the picture above, rigth to the layer 3 -
+    
+    //         +-------+
+    //         |       |
+    //         |   5   |
+    //         |       |
+    //         +-------+
+    //+-------++-------++-------+
+    //|       ||       ||       |
+    //|   1   ||  2/4  ||   3   |
+    //|       ||       ||       |
+    //+-------++-------++-------+
+    //         +-------+
+    //         |       |
+    //         |   6   |
+    //         |       |
+    //         +-------+
+    
+    if number == 4 {
+      #if os(iOS) || os(tvOS)
+      view.layer.zPosition = 1
+      #endif
+
+      #if os(OSX)
+      view.layer?.zPosition = 1
+      #endif
+    }
+    
     return view
   }
 }
