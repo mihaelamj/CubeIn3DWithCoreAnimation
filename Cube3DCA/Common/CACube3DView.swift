@@ -142,9 +142,6 @@ private extension CACube3DView {
     // INFO: Intially the cube is flattened
     for index in 1...6 {
       let view = getSideSubview(number: index)
-      
-      if index == 4 { // mount the 4th cube side
-      }
       addSideSubview(view)
     }
   }

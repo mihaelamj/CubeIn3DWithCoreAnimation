@@ -95,7 +95,7 @@ public extension CATransform3D {
         trans = CATransform3DMakeRotation(-halfPi, 0, 1, 0) // 3 - rotated -90° on the `Y` axes
         break
       case 4:
-        trans = CATransform3DMakeTranslation(0, 0, zWidth) // same as setting the `zPosition`, brogt up-front by the `width`, side of our cube
+        trans = CATransform3DMakeTranslation(0, 0, zWidth) // same as setting the `zPosition`, broght up-front by the `width`, side of our cube
         break
       case 5:
         trans = CATransform3DMakeRotation(-halfPi, 1, 0, 0) // 5 - rotated -90° on the `X` axes

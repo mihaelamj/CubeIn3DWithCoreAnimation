@@ -17,7 +17,6 @@ import Cocoa
 #endif
 
 public class CustomLayerView: PlainLayerView {
-  //static func makeCustomDemoView(text: String, color: AColor, side: CGFloat) -> AView {
   
   // MARK: -
   // MARK: Properties -

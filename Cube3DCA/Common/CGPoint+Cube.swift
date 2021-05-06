@@ -50,12 +50,6 @@ public extension CGPoint {
         resultAnchorPoint = CGPoint(x:0.5, y:0.0)   // 6 - top
         resultPosition = CGPoint(x:0.0 + xOffset, y:halfSideSize + yOffset)
         break
-      case 7:
-        resultAnchorPoint = CGPoint(x:0.0, y:0.5)   // Transform
-        resultPosition = CGPoint(x:halfSideSize + xOffset, y:0 + yOffset)
-      case 8:
-        resultAnchorPoint = CGPoint(x:0.0, y:0.5)   // 4 in Transform Layer
-        resultPosition = CGPoint(x:2 * halfSideSize + xOffset, y:halfSideSize + yOffset)
       default:
         break
     }

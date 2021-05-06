@@ -69,6 +69,9 @@
 		A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_flat_messed_up.png; sourceTree = "<group>"; };
 		A9D845BE26440B9E00470DD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A9FCC2D126441FA900BDF73F /* CoreAnimation_3D_Cube.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CoreAnimation_3D_Cube.gif; sourceTree = "<group>"; };
+		A9FCC2D3264424B500BDF73F /* Intersecting_Layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intersecting_Layers.png; sourceTree = "<group>"; };
+		A9FCC2D426442AAF00BDF73F /* original_abandoned_cube_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = original_abandoned_cube_layout.png; sourceTree = "<group>"; };
+		A9FCC2D526442CA800BDF73F /* side4_broken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side4_broken.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,11 +144,11 @@
 		A9D845952643FA8200470DD6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A9D8458F2643F96600470DD6 /* CommonViewController.swift */,
 				A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */,
 				A9D845A22643FE6D00470DD6 /* AView+Custom.swift */,
 				A9D845A52643FEC800470DD6 /* AColor+Custom.swift */,
 				A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */,
-				A9D8458F2643F96600470DD6 /* CommonViewController.swift */,
 				A9D845992643FBA600470DD6 /* PlainLayerView.swift */,
 				A9D8459C2643FBF100470DD6 /* GestureRecognizerView.swift */,
 				A9D8459F2643FD4900470DD6 /* CustomLayerView.swift */,
@@ -164,6 +167,9 @@
 		A9D845BD26440B0C00470DD6 /* DemoImages */ = {
 			isa = PBXGroup;
 			children = (
+				A9FCC2D426442AAF00BDF73F /* original_abandoned_cube_layout.png */,
+				A9FCC2D3264424B500BDF73F /* Intersecting_Layers.png */,
+				A9FCC2D526442CA800BDF73F /* side4_broken.png */,
 				A9D845B826440ADD00470DD6 /* cube_iOS_flat_1.png */,
 				A9D845B926440ADD00470DD6 /* cube_iOS_flat_2.png */,
 				A9D845BA26440ADD00470DD6 /* cube_iOS_3D_.png */,
