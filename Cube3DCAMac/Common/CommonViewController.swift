@@ -22,7 +22,6 @@ class CommonViewController: AViewController {
   // MARK: -
   // MARK: Properties -
   
-  
   private(set) public lazy var cubeView: CACube3DView = {
     let v = CACube3DView(layerName: "Cube 3D View")
     return v

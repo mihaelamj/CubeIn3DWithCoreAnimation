@@ -77,9 +77,9 @@ private extension CustomLayerView {
     return tl
   }
   static func styleMyLayer(_ lay: CALayer?, sideWidth: CGFloat) {
-    let cornerRadius: CGFloat = sideWidth * 0.8
+    let cornerRadius: CGFloat = sideWidth * 0.3
     lay?.borderColor = AColor.white.cgColor
-    lay?.borderWidth = sideWidth * 0.2
+    lay?.borderWidth = sideWidth * 0.1
     
     lay?.shadowRadius = 33.0
     lay?.shadowColor = AColor.black.cgColor

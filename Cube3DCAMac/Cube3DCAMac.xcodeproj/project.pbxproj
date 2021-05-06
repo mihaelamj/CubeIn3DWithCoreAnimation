@@ -34,6 +34,9 @@
 		A9D845A72643FEC800470DD6 /* AColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A52643FEC800470DD6 /* AColor+Custom.swift */; };
 		A9D845A92643FEF900470DD6 /* CGPoint+Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */; };
 		A9D845AA2643FEF900470DD6 /* CGPoint+Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */; };
+		A9D845AD2644042800470DD6 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A9D845AC2644042800470DD6 /* AllApples */; };
+		A9D845B02644088800470DD6 /* cube_3D_messed_up.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */; };
+		A9D845B12644088800470DD6 /* cube_flat_messed_up.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,8 @@
 		A9D845A22643FE6D00470DD6 /* AView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AView+Custom.swift"; sourceTree = "<group>"; };
 		A9D845A52643FEC800470DD6 /* AColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AColor+Custom.swift"; sourceTree = "<group>"; };
 		A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Cube.swift"; sourceTree = "<group>"; };
+		A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube_3D_messed_up.png; path = ../../../../../Desktop/cube_3D_messed_up.png; sourceTree = "<group>"; };
+		A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube_flat_messed_up.png; path = ../../../../../Desktop/cube_flat_messed_up.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D845AD2644042800470DD6 /* AllApples in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 				A9D845632643F86B00470DD6 /* Cube3DCAMac */,
 				A9D8457A2643F8E400470DD6 /* Cube3DMobile */,
 				A9D845622643F86B00470DD6 /* Products */,
+				A9D845AB2644042800470DD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				A9D8458D2643F92300470DD6 /* main.swift */,
+				A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */,
+				A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */,
 				A9D845642643F86B00470DD6 /* AppDelegate.swift */,
 				A9D845662643F86D00470DD6 /* Assets.xcassets */,
 				A9D845682643F86D00470DD6 /* MainMenu.xib */,
@@ -138,6 +147,13 @@
 				A9D845962643FAEE00470DD6 /* CACube3DView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A9D845AB2644042800470DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +192,9 @@
 			dependencies = (
 			);
 			name = Cube3DMobile;
+			packageProductDependencies = (
+				A9D845AC2644042800470DD6 /* AllApples */,
+			);
 			productName = Cube3DMobile;
 			productReference = A9D845792643F8E400470DD6 /* Cube3DMobile.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +245,8 @@
 			files = (
 				A9D845672643F86D00470DD6 /* Assets.xcassets in Resources */,
 				A9D8456A2643F86D00470DD6 /* MainMenu.xib in Resources */,
+				A9D845B02644088800470DD6 /* cube_3D_messed_up.png in Resources */,
+				A9D845B12644088800470DD6 /* cube_flat_messed_up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +565,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		A9D845732643F8C200470DD6 /* AllApples */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9D845722643F8C200470DD6 /* XCRemoteSwiftPackageReference "allapples" */;
+			productName = AllApples;
+		};
+		A9D845AC2644042800470DD6 /* AllApples */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A9D845722643F8C200470DD6 /* XCRemoteSwiftPackageReference "allapples" */;
 			productName = AllApples;

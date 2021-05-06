@@ -204,7 +204,7 @@ private extension CACube3DView {
     #endif
     
     #if os(iOS) || os(tvOS)
-    side4.layer.zPosition = on ? NewCubeView.sideWidth : 1
+    side4.layer.zPosition = on ? CACube3DView.sideWidth : 1
     side1.layer.transform = on ? CATransform3D.transformFor3DCubeSide(1, zWidth: CACube3DView.sideWidth) : CATransform3DIdentity
     side2.layer.transform = on ? CATransform3D.transformFor3DCubeSide(2, zWidth: CACube3DView.sideWidth) : CATransform3DIdentity
     side3.layer.transform = on ? CATransform3D.transformFor3DCubeSide(3, zWidth: CACube3DView.sideWidth) : CATransform3DIdentity
