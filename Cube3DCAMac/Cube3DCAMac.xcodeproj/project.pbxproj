@@ -64,6 +64,11 @@
 		A9D845A82643FEF900470DD6 /* CGPoint+Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Cube.swift"; sourceTree = "<group>"; };
 		A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube_3D_messed_up.png; path = ../../../../../Desktop/cube_3D_messed_up.png; sourceTree = "<group>"; };
 		A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube_flat_messed_up.png; path = ../../../../../Desktop/cube_flat_messed_up.png; sourceTree = "<group>"; };
+		A9D845B826440ADD00470DD6 /* cube_iOS_flat_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_flat_1.png; sourceTree = "<group>"; };
+		A9D845B926440ADD00470DD6 /* cube_iOS_flat_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_flat_2.png; sourceTree = "<group>"; };
+		A9D845BA26440ADD00470DD6 /* cube_iOS_3D_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_3D_.png; sourceTree = "<group>"; };
+		A9D845BB26440B0300470DD6 /* cube_macOS_3D_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_3D_messed_up.png; sourceTree = "<group>"; };
+		A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_flat_messed_up.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +141,7 @@
 		A9D845952643FA8200470DD6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A9D845BD26440B0C00470DD6 /* Demo Images */,
 				A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */,
 				A9D845A22643FE6D00470DD6 /* AView+Custom.swift */,
 				A9D845A52643FEC800470DD6 /* AColor+Custom.swift */,
@@ -154,6 +160,18 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9D845BD26440B0C00470DD6 /* Demo Images */ = {
+			isa = PBXGroup;
+			children = (
+				A9D845B826440ADD00470DD6 /* cube_iOS_flat_1.png */,
+				A9D845B926440ADD00470DD6 /* cube_iOS_flat_2.png */,
+				A9D845BA26440ADD00470DD6 /* cube_iOS_3D_.png */,
+				A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */,
+				A9D845BB26440B0300470DD6 /* cube_macOS_3D_messed_up.png */,
+			);
+			path = "Demo Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
