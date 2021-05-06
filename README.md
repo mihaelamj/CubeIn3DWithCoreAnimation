@@ -8,8 +8,7 @@ Well, that din't work out great, for I still have to make the Mac version to wor
 
 So on `iOS` and `iPadOS` it works as expected:
 
-![Cube 3Dt](../main/DemoImages/cube_iOS_3D_.png)
+https://github.com/mihaelamj/CubeIn3DWithCoreAnimation/blob/main/Cube3DCA/DemoImages/cube_iOS_3D_.png
 
-//https://github.com/mihaelamj/CubeIn3DWithCoreAnimation/blob/main/DemoImages/DemoImages/cube_iOS_3D_.png
+![Cube 3Dt](../main/Cube3DCA/DemoImages/cube_iOS_3D_.png)
 
-<img_src="https://github.com/mihaelamj/CubeIn3DWithCoreAnimation/blob/main/Cube3DCA/DemoImages/cube_iOS_3D_.png">
