@@ -16,6 +16,12 @@ There's also a flattened version:
 
 ![Cube Flattened](../main/Cube3DCA/DemoImages/cube_iOS_flat_1.png)
 
-The side number two is actually behing the 4.:
+The side number two is actually behin the side number 4.:
 
 ![Cube Flattened](../main/Cube3DCA/DemoImages/cube_iOS_flat_2.png)
+
+As you can see here:
+
+![Cube 3D Animating](../main/Cube3DCA/DemoImages/CoreAnimation_3D_Cube.png)
+
+

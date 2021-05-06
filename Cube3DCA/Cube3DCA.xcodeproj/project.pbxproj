@@ -68,6 +68,7 @@
 		A9D845BB26440B0300470DD6 /* cube_macOS_3D_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_3D_messed_up.png; sourceTree = "<group>"; };
 		A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_flat_messed_up.png; sourceTree = "<group>"; };
 		A9D845BE26440B9E00470DD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A9FCC2D126441FA900BDF73F /* CoreAnimation_3D_Cube.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CoreAnimation_3D_Cube.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 				A9D845BA26440ADD00470DD6 /* cube_iOS_3D_.png */,
 				A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */,
 				A9D845BB26440B0300470DD6 /* cube_macOS_3D_messed_up.png */,
+				A9FCC2D126441FA900BDF73F /* CoreAnimation_3D_Cube.gif */,
 			);
 			path = DemoImages;
 			sourceTree = "<group>";
