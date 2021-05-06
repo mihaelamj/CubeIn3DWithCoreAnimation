@@ -1,14 +1,5 @@
 //
 //  GestureRecognizerView.swift
-//  Cube3DCAMac
-//
-//  Created by Mihaela Mihaljevic Jakic on 06.05.2021..
-//
-
-import Foundation
-
-//
-//  GestureRecognizerView.swift
 //  3DCubeWithCA
 //
 //  Created by Mihaela Mihaljevic Jakic on 05.05.2021..
@@ -203,7 +194,7 @@ private extension GestureRecognizerView {
     rotationChanged(degrees: degrees)
   }
   
-  @objc  func handlePan(displacement: CGPoint, changed: Bool) {
+  @objc func handlePan(displacement: CGPoint, changed: Bool) {
     guard changed == true else { return }
     debugPrint("Displacement point: \(displacement)")
     displacementChanged(displacement: displacement)

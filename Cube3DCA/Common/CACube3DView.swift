@@ -189,6 +189,7 @@ private extension CACube3DView {
     }
     #endif
   }
+  
   func set3DCube(on: Bool) {
     #if os(OSX)
     side4.layer?.zPosition = on ? CACube3DView.sideWidth : 1
@@ -233,7 +234,6 @@ public extension CACube3DView {
   override func displacementChanged(displacement: CGPoint) {
     debugPrint("Moved to: \(displacement)")
     
-    // no rotation, nothing to do
     guard !(displacement.x == 0 && displacement.y == 0) else { return }
     
     let rotationTransform = transformedLayer.sublayerTransform.rotationFromDisplacement(displacement, sideWidth: CACube3DView.sideWidth, is3D: isOn)

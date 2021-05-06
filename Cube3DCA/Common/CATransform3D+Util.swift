@@ -46,7 +46,7 @@ public extension CATransform3D {
 }
 
 // MARK: -
-// MARK: A little Perspective-
+// MARK: A Little Perspective-
 
 public extension CATransform3D {
   static func somePerspectiveTransform() -> CATransform3D {

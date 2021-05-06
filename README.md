@@ -2,6 +2,8 @@
 
 A demo of 3D cube done purely in Core Animation
 
+Here's a link to the [blog post](https://aleahim.com/core-animation-layers-forming-a-3d-cube/) describing the process in details
+
 It uses  [AllApples](https://github.com/mihaelamj/allapples) Swift package, to enable the example to work both on *iOS* devices and on the *Mac*.
 
 Well, that din't work out great, for I still have to make the Mac version to work correctly.
