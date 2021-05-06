@@ -8,7 +8,14 @@ Well, that din't work out great, for I still have to make the Mac version to wor
 
 So on `iOS` and `iPadOS` it works as expected:
 
-https://github.com/mihaelamj/CubeIn3DWithCoreAnimation/blob/main/Cube3DCA/DemoImages/cube_iOS_3D_.png
+![Cube 3D](../main/Cube3DCA/DemoImages/cube_iOS_3D_.png)
 
-![Cube 3Dt](../main/Cube3DCA/DemoImages/cube_iOS_3D_.png)
+This is cube assembled.
 
+There's also a flattened version:
+
+![Cube Flattened](../main/Cube3DCA/DemoImages/cube_iOS_flat_1.png)
+
+The side number two is actually behing the 4.:
+
+![Cube Flattened](../main/Cube3DCA/DemoImages/cube_iOS_flat_2.png)
