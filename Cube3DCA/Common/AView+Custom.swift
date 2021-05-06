@@ -49,7 +49,7 @@ extension AView {
     //         |       |
     //         +-------+
     
-    // INFO: Put layer 4 in fron of layer 2, instead of as in the picture above, rigth to the layer 3 -
+    // INFO: Put layer 4 in front of layer 2, instead of as in the picture above, rigth to the layer 3 -
     
     //         +-------+
     //         |       |
