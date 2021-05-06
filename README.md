@@ -22,6 +22,6 @@ The side number two is actually behin the side number 4.:
 
 As you can see here:
 
-![Cube 3D Animating](../main/Cube3DCA/DemoImages/CoreAnimation_3D_Cube.png)
+![Cube 3D Animating](../main/Cube3DCA/DemoImages/CoreAnimation_3D_Cube.gif)
 
 
