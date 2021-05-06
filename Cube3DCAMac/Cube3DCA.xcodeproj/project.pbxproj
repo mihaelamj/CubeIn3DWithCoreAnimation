@@ -37,6 +37,8 @@
 		A9D845AD2644042800470DD6 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A9D845AC2644042800470DD6 /* AllApples */; };
 		A9D845B02644088800470DD6 /* cube_3D_messed_up.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D845AE2644088800470DD6 /* cube_3D_messed_up.png */; };
 		A9D845B12644088800470DD6 /* cube_flat_messed_up.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D845AF2644088800470DD6 /* cube_flat_messed_up.png */; };
+		A9D845BF26440B9E00470DD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D845BE26440B9E00470DD6 /* README.md */; };
+		A9D845C026440B9E00470DD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D845BE26440B9E00470DD6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,7 @@
 		A9D845BA26440ADD00470DD6 /* cube_iOS_3D_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_iOS_3D_.png; sourceTree = "<group>"; };
 		A9D845BB26440B0300470DD6 /* cube_macOS_3D_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_3D_messed_up.png; sourceTree = "<group>"; };
 		A9D845BC26440B0300470DD6 /* cube_macOS_flat_messed_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube_macOS_flat_messed_up.png; sourceTree = "<group>"; };
+		A9D845BE26440B9E00470DD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		A9D845582643F86B00470DD6 = {
 			isa = PBXGroup;
 			children = (
+				A9D845BE26440B9E00470DD6 /* README.md */,
+				A9D845BD26440B0C00470DD6 /* Demo Images */,
 				A9D845952643FA8200470DD6 /* Common */,
 				A9D845632643F86B00470DD6 /* Cube3DCAMac */,
 				A9D8457A2643F8E400470DD6 /* Cube3DMobile */,
@@ -141,7 +146,6 @@
 		A9D845952643FA8200470DD6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				A9D845BD26440B0C00470DD6 /* Demo Images */,
 				A9D845922643FA0400470DD6 /* CATransform3D+Util.swift */,
 				A9D845A22643FE6D00470DD6 /* AView+Custom.swift */,
 				A9D845A52643FEC800470DD6 /* AColor+Custom.swift */,
@@ -234,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9D8455C2643F86B00470DD6 /* Build configuration list for PBXProject "Cube3DCAMac" */;
+			buildConfigurationList = A9D8455C2643F86B00470DD6 /* Build configuration list for PBXProject "Cube3DCA" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,6 +267,7 @@
 			files = (
 				A9D845672643F86D00470DD6 /* Assets.xcassets in Resources */,
 				A9D8456A2643F86D00470DD6 /* MainMenu.xib in Resources */,
+				A9D845BF26440B9E00470DD6 /* README.md in Resources */,
 				A9D845B02644088800470DD6 /* cube_3D_messed_up.png in Resources */,
 				A9D845B12644088800470DD6 /* cube_flat_messed_up.png in Resources */,
 			);
@@ -272,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D845C026440B9E00470DD6 /* README.md in Resources */,
 				A9D845882643F8E600470DD6 /* LaunchScreen.storyboard in Resources */,
 				A9D845852643F8E600470DD6 /* Assets.xcassets in Resources */,
 			);
@@ -541,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9D8455C2643F86B00470DD6 /* Build configuration list for PBXProject "Cube3DCAMac" */ = {
+		A9D8455C2643F86B00470DD6 /* Build configuration list for PBXProject "Cube3DCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9D8456D2643F86D00470DD6 /* Debug */,
