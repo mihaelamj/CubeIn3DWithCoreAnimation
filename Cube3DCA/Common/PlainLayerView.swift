@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-import Foundation
 import AllApples
 
 #if os(iOS) || os(tvOS)
@@ -30,8 +28,15 @@ public class PlainLayerView: AView {
   }
   
   #if os(OSX)
-  public override var wantsUpdateLayer : Bool {
-    get {  return true }
+  // allows you to safely directly access the layer
+//  public override var wantsUpdateLayer : Bool {
+//    get {  return true }
+//  }
+  #endif
+  
+  #if os(OSX)
+  public override var isFlipped: Bool {
+    return true
   }
   #endif
   
@@ -66,8 +71,9 @@ private extension PlainLayerView {
   private func setupLayer() {
     
     #if os(OSX)
-    wantsLayer = true
     layer = CALayer()
+    // It’s important that you set wantsLayer after you’ve set your custom layer
+    wantsLayer = true
     myLayer?.isGeometryFlipped = true
     frame = CGRect(x: 0, y: 0, width: 1000, height: 1000)
     #endif
@@ -86,5 +92,21 @@ public extension PlainLayerView {
     sublayer.isGeometryFlipped = true
     #endif
     myLayer?.addSublayer(sublayer)
+  }
+  
+  func addNewSubview(_ subview: AView) {
+    #if os(OSX)
+    guard let aLayer = subview.layer else {
+      fatalError("Trying to add subview with it's layer == `nil`")
+    }
+    #endif
+    addSubview(subview)
+    
+    #if os(iOS) || os(tvOS)
+    layer.addSublayer(subview.layer)
+    #endif
+    #if os(OSX)
+    myLayer?.addSublayer(aLayer)
+    #endif
   }
 }

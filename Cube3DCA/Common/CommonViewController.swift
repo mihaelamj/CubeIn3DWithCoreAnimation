@@ -42,7 +42,6 @@ class CommonViewController: AViewController {
     if let aView = view as? AView {
       aView.myColor = AColor.black
     }
-    
   }
 
 }

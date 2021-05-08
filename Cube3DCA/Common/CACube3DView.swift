@@ -200,7 +200,7 @@ private extension CACube3DView {
     side5.layer?.transform = on ? CATransform3D.transformFor3DCubeSide(5, zWidth: CACube3DView.sideWidth)  : CATransform3DIdentity
     side6.layer?.transform = on ? CATransform3D.transformFor3DCubeSide(6, zWidth: CACube3DView.sideWidth)  : CATransform3DIdentity
     #endif
-    
+
     #if os(iOS) || os(tvOS)
     side4.layer.zPosition = on ? CACube3DView.sideWidth : 1
     side1.layer.transform = on ? CATransform3D.transformFor3DCubeSide(1, zWidth: CACube3DView.sideWidth) : CATransform3DIdentity
@@ -210,6 +210,57 @@ private extension CACube3DView {
     side5.layer.transform = on ? CATransform3D.transformFor3DCubeSide(5, zWidth: CACube3DView.sideWidth) : CATransform3DIdentity
     side6.layer.transform = on ? CATransform3D.transformFor3DCubeSide(6, zWidth: CACube3DView.sideWidth) : CATransform3DIdentity
     #endif
+    
+//    set3DCubeAnimated(on: on)
+  }
+  
+  func set3DCubeAnimated(on: Bool) {
+    for index in 1...6 {
+      let view = getSideSubview(number: index)
+      let layerAnimations = makeAnimationsForLayer(view.layer, on: on, side: index)
+      setAnimationsToLayer(view.layer, on: on, side: index, animations: layerAnimations)
+    }
+        
+//    let group = CAAnimationGroup()
+//    group.duration = 0.5
+//    group.timingFunction = CAMediaTimingFunction(name: .linear)
+////    group.beginTime = CACurrentMediaTime() + 0.2
+//    group.animations = animations
+//    transformedLayer.add(group, forKey: "Open_Close_Cube")
+  }
+  
+  func setAnimationsToLayer(_ layer: CALayer?, on: Bool, side: Int, animations:  [CABasicAnimation]) {
+    guard let aLayer = layer else { return }
+    
+    let group = CAAnimationGroup()
+    group.duration = 1.5
+    group.timingFunction = CAMediaTimingFunction(name: .linear)
+//    group.beginTime = CACurrentMediaTime() + 0.2
+    group.animations = animations
+    aLayer.add(group, forKey: "Open_Close_Cube")
+  }
+  
+  func makeAnimationsForLayer(_ layer: CALayer?, on: Bool, side: Int) -> [CABasicAnimation] {
+    
+    var result = [CABasicAnimation]()
+    
+    guard let aLayer = layer else { return result }
+    
+    // Z position animation
+    if side == 4 {
+      let animation = CABasicAnimation(keyPath: "zPosition")
+      animation.fromValue = aLayer.zPosition
+      animation.toValue = on ? CACube3DView.sideWidth : 1
+      result.append(animation)
+    }
+    
+    // Transform animation
+    let animation = CABasicAnimation(keyPath: "transform")
+    animation.fromValue = aLayer.transform
+    animation.toValue = on ? CATransform3D.transformFor3DCubeSide(side, zWidth: CACube3DView.sideWidth)  : CATransform3DIdentity
+    result.append(animation)
+    
+    return result
   }
   
 }
