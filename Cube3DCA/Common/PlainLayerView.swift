@@ -28,7 +28,7 @@ public class PlainLayerView: AView {
   }
   
   #if os(OSX)
-  // allows you to safely directly access the layer
+//   allows you to safely directly access the layer
 //  public override var wantsUpdateLayer : Bool {
 //    get {  return true }
 //  }
@@ -76,6 +76,7 @@ private extension PlainLayerView {
     wantsLayer = true
     myLayer?.isGeometryFlipped = true
     frame = CGRect(x: 0, y: 0, width: 1000, height: 1000)
+    NSAnimationContext.current.allowsImplicitAnimation = true
     #endif
     
     myLayer?.name = layerName
