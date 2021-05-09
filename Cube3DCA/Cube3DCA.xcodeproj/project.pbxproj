@@ -37,6 +37,14 @@
 		A9D845AD2644042800470DD6 /* AllApples in Frameworks */ = {isa = PBXBuildFile; productRef = A9D845AC2644042800470DD6 /* AllApples */; };
 		A9D845BF26440B9E00470DD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D845BE26440B9E00470DD6 /* README.md */; };
 		A9D845C026440B9E00470DD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D845BE26440B9E00470DD6 /* README.md */; };
+		A9FEA5002647E93B00991666 /* Cube3DSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEA4EE2647E93A00991666 /* Cube3DSwiftUIApp.swift */; };
+		A9FEA5012647E93B00991666 /* Cube3DSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEA4EE2647E93A00991666 /* Cube3DSwiftUIApp.swift */; };
+		A9FEA5022647E93B00991666 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEA4EF2647E93A00991666 /* ContentView.swift */; };
+		A9FEA5032647E93B00991666 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEA4EF2647E93A00991666 /* ContentView.swift */; };
+		A9FEA5042647E93B00991666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FEA4F02647E93A00991666 /* Assets.xcassets */; };
+		A9FEA5052647E93B00991666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FEA4F02647E93A00991666 /* Assets.xcassets */; };
+		A9FEA50D2647E97600991666 /* Cube3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEA50C2647E97600991666 /* Cube3D.swift */; };
+		A9FEA50E2647E97600991666 /* Cube3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEA50C2647E97600991666 /* Cube3D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +83,15 @@
 		A9FCC2D6264454E100BDF73F /* anchor_points.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchor_points.png; sourceTree = "<group>"; };
 		A9FCC2D7264454E100BDF73F /* anchor_points1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchor_points1.png; sourceTree = "<group>"; };
 		A9FCC2D826445A7000BDF73F /* 3DCube_Wrong_on_The_mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3DCube_Wrong_on_The_mac.png; sourceTree = "<group>"; };
+		A9FEA4EE2647E93A00991666 /* Cube3DSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube3DSwiftUIApp.swift; sourceTree = "<group>"; };
+		A9FEA4EF2647E93A00991666 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9FEA4F02647E93A00991666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9FEA4F52647E93A00991666 /* Cube3DSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube3DSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FEA4F72647E93A00991666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FEA4FC2647E93B00991666 /* Cube3DSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube3DSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FEA4FE2647E93B00991666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FEA4FF2647E93B00991666 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A9FEA50C2647E97600991666 /* Cube3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube3D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +111,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9FEA4F22647E93A00991666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FEA4F92647E93B00991666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -105,6 +136,9 @@
 				A9D845952643FA8200470DD6 /* Common */,
 				A9D845632643F86B00470DD6 /* Cube3DCAMac */,
 				A9D8457A2643F8E400470DD6 /* Cube3DMobile */,
+				A9FEA4ED2647E93A00991666 /* Shared */,
+				A9FEA4F62647E93A00991666 /* iOS */,
+				A9FEA4FD2647E93B00991666 /* macOS */,
 				A9D845622643F86B00470DD6 /* Products */,
 				A9D845AB2644042800470DD6 /* Frameworks */,
 			);
@@ -115,6 +149,8 @@
 			children = (
 				A9D845612643F86B00470DD6 /* Cube3DCAMac.app */,
 				A9D845792643F8E400470DD6 /* Cube3DMobile.app */,
+				A9FEA4F52647E93A00991666 /* Cube3DSwiftUI.app */,
+				A9FEA4FC2647E93B00991666 /* Cube3DSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +222,34 @@
 			path = DemoImages;
 			sourceTree = "<group>";
 		};
+		A9FEA4ED2647E93A00991666 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A9FEA4EE2647E93A00991666 /* Cube3DSwiftUIApp.swift */,
+				A9FEA4EF2647E93A00991666 /* ContentView.swift */,
+				A9FEA4F02647E93A00991666 /* Assets.xcassets */,
+				A9FEA50C2647E97600991666 /* Cube3D.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A9FEA4F62647E93A00991666 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A9FEA4F72647E93A00991666 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A9FEA4FD2647E93B00991666 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A9FEA4FE2647E93B00991666 /* Info.plist */,
+				A9FEA4FF2647E93B00991666 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +293,40 @@
 			productReference = A9D845792643F8E400470DD6 /* Cube3DMobile.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A9FEA4F42647E93A00991666 /* Cube3DSwiftUI (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FEA50A2647E93B00991666 /* Build configuration list for PBXNativeTarget "Cube3DSwiftUI (iOS)" */;
+			buildPhases = (
+				A9FEA4F12647E93A00991666 /* Sources */,
+				A9FEA4F22647E93A00991666 /* Frameworks */,
+				A9FEA4F32647E93A00991666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cube3DSwiftUI (iOS)";
+			productName = "Cube3DSwiftUI (iOS)";
+			productReference = A9FEA4F52647E93A00991666 /* Cube3DSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9FEA4FB2647E93B00991666 /* Cube3DSwiftUI (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FEA50B2647E93B00991666 /* Build configuration list for PBXNativeTarget "Cube3DSwiftUI (macOS)" */;
+			buildPhases = (
+				A9FEA4F82647E93B00991666 /* Sources */,
+				A9FEA4F92647E93B00991666 /* Frameworks */,
+				A9FEA4FA2647E93B00991666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cube3DSwiftUI (macOS)";
+			productName = "Cube3DSwiftUI (macOS)";
+			productReference = A9FEA4FC2647E93B00991666 /* Cube3DSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,6 +340,12 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					A9D845782643F8E400470DD6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					A9FEA4F42647E93A00991666 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					A9FEA4FB2647E93B00991666 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -264,6 +368,8 @@
 			targets = (
 				A9D845602643F86B00470DD6 /* Cube3DCAMac */,
 				A9D845782643F8E400470DD6 /* Cube3DMobile */,
+				A9FEA4F42647E93A00991666 /* Cube3DSwiftUI (iOS) */,
+				A9FEA4FB2647E93B00991666 /* Cube3DSwiftUI (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +392,22 @@
 				A9D845C026440B9E00470DD6 /* README.md in Resources */,
 				A9D845882643F8E600470DD6 /* LaunchScreen.storyboard in Resources */,
 				A9D845852643F8E600470DD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FEA4F32647E93A00991666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FEA5042647E93B00991666 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FEA4FA2647E93B00991666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FEA5052647E93B00991666 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +447,26 @@
 				A9D845AA2643FEF900470DD6 /* CGPoint+Cube.swift in Sources */,
 				A9D845942643FA0400470DD6 /* CATransform3D+Util.swift in Sources */,
 				A9D845A42643FE6D00470DD6 /* AView+Custom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FEA4F12647E93A00991666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FEA5022647E93B00991666 /* ContentView.swift in Sources */,
+				A9FEA5002647E93B00991666 /* Cube3DSwiftUIApp.swift in Sources */,
+				A9FEA50D2647E97600991666 /* Cube3D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FEA4F82647E93B00991666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FEA5032647E93B00991666 /* ContentView.swift in Sources */,
+				A9FEA5012647E93B00991666 /* Cube3DSwiftUIApp.swift in Sources */,
+				A9FEA50E2647E97600991666 /* Cube3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +694,99 @@
 			};
 			name = Release;
 		};
+		A9FEA5062647E93B00991666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DSwiftUI;
+				PRODUCT_NAME = Cube3DSwiftUI;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9FEA5072647E93B00991666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DSwiftUI;
+				PRODUCT_NAME = Cube3DSwiftUI;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9FEA5082647E93B00991666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DSwiftUI;
+				PRODUCT_NAME = Cube3DSwiftUI;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9FEA5092647E93B00991666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaelamj.me.Cube3DSwiftUI;
+				PRODUCT_NAME = Cube3DSwiftUI;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +813,24 @@
 			buildConfigurations = (
 				A9D8458B2643F8E600470DD6 /* Debug */,
 				A9D8458C2643F8E600470DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FEA50A2647E93B00991666 /* Build configuration list for PBXNativeTarget "Cube3DSwiftUI (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FEA5062647E93B00991666 /* Debug */,
+				A9FEA5072647E93B00991666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FEA50B2647E93B00991666 /* Build configuration list for PBXNativeTarget "Cube3DSwiftUI (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FEA5082647E93B00991666 /* Debug */,
+				A9FEA5092647E93B00991666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
