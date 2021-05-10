@@ -121,8 +121,70 @@ struct FlipEffect: GeometryEffect {
     let affineTransform = ProjectionTransform(CGAffineTransform(translationX: size.width/2.0, y: size.height / 2.0))
     
     return ProjectionTransform(transform3d).concatenating(affineTransform)
+    // .rotationEffect(Angle(degrees: 45), anchor: .center)
   }
 }
+
+struct Cube3Deffect: GeometryEffect {
+  var cubeSide: Int
+  var sideSize: CGFloat
+  
+  func degreesForSide(_ side: Int) -> CGFloat {
+    let halfPi = CGFloat(Double.pi) / 2.0
+    var result: CGFloat = 0
+    switch side {
+      case 1:
+        result = halfPi
+      case 2:
+        result = 0
+      case 3:
+        result = -halfPi
+      case 4:
+        result = 0
+      case 5:
+        result = -halfPi
+      case 6:
+        result = halfPi
+      default:
+        break
+    }
+    return result
+  }
+
+  func transform3DForSide(_ side: Int, zWidth: CGFloat) -> CATransform3D {
+    let halfPi = CGFloat(Double.pi) / 2.0
+    var trans = CATransform3DIdentity
+    
+    switch side {
+      case 1:
+        trans = CATransform3DMakeRotation(halfPi, 0, 1, 0) // 1 - rotated +90° on the `Y` axes
+        break
+      case 2:
+        trans = CATransform3DIdentity // 2 - stays the same
+        break
+      case 3:
+        trans = CATransform3DMakeRotation(-halfPi, 0, 1, 0) // 3 - rotated -90° on the `Y` axes
+        break
+      case 4:
+        trans = CATransform3DMakeTranslation(0, 0, zWidth) // same as setting the `zPosition`, broght up-front by the `width`, side of our cube
+        break
+      case 5:
+        trans = CATransform3DMakeRotation(-halfPi, 1, 0, 0) // 5 - rotated -90° on the `X` axes
+        break
+      case 6:
+        trans = CATransform3DMakeRotation(halfPi, 1, 0, 0) // 6 - rotated +90° on the `X` axes
+        break
+      default:
+        break
+    }
+    
+    return trans
+  }
+  
+  
+}
+
+
 
 struct CubeFlat: View {
   var body: some View {
@@ -141,13 +203,20 @@ struct CubeSideView_Previews: PreviewProvider {
     static var previews: some View {
       VStack {
         CubeSideView(number: 1, color1: .blue, color2: .purple, sideSize: 300)
-        CubeSideView(number: 2, color1: .red, color2: .pink, sideSize: 300)
-        CubeSideView(number: 3, color1: .green, color2: .blue, sideSize: 300)
-        CubeSideView(number: 4, color1: .yellow, color2: .orange, sideSize: 300)
-        CubeSideView(number: 5, color1: .purple, color2: .pink, sideSize: 300)
-        CubeSideView(number: 6, color1: .blue, color2: .black, sideSize: 300)
+          .rotation3DEffect(Angle(degrees: 90.0),
+                            axis: (x: 0.14, y: 1, z: 1),
+                                       anchor: .bottomTrailing,
+                                       anchorZ: -100,
+                                       perspective: 0.0002)
+//        CubeSideView(number: 2, color1: .red, color2: .pink, sideSize: 300)
+//        CubeSideView(number: 3, color1: .green, color2: .blue, sideSize: 300)
+//        CubeSideView(number: 4, color1: .yellow, color2: .orange, sideSize: 300)
+//        CubeSideView(number: 5, color1: .purple, color2: .pink, sideSize: 300)
+//        CubeSideView(number: 6, color1: .blue, color2: .black, sideSize: 300)
 //        CubeFlat()
       }
+      .frame(width: 600, height: 900)
+      .fixedSize(horizontal: true, vertical: true)
     }
 }
 
