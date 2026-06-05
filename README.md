@@ -1,42 +1,41 @@
 # CubeIn3DWithCoreAnimation
 
-A demo of 3D cube done purely in Core Animation
+iOS Core Animation 3D cube demo, with notes on macOS transform differences.
 
-Here's a link to the [blog post](https://aleahim.com/blog/core-animation-3d-cube/) describing the process in details
+This is an older sample project kept public because people still reference the
+Core Animation cube experiment. The iOS/iPadOS version demonstrates a working
+3D cube assembled from layers; the macOS target is intentionally documented as
+unfinished because the same transform setup does not behave identically there.
 
-It uses  [AllApples](https://github.com/mihaelamj/allapples) Swift package, to enable the example to work both on *iOS* devices and on the *Mac*.
+Related write-up: [Core Animation 3D Cube](https://aleahim.com/blog/core-animation-3d-cube/).
 
-Well, that din't work out great, for I still have to make the Mac version to work correctly.
+## iOS Result
 
-So on `iOS` and `iPadOS` it works as expected:
+Assembled cube:
 
-![Cube 3D](../main/Cube3DCA/DemoImages/cube_iOS_3D_.png)
+![Cube 3D](Cube3DCA/DemoImages/cube_iOS_3D_.png)
 
-This is cube assembled.
+Flattened layout:
 
-There's also a flattened version:
+![Cube flattened](Cube3DCA/DemoImages/cube_iOS_flat_1.png)
 
-![Cube Flattened](../main/Cube3DCA/DemoImages/cube_iOS_flat_1.png)
+Animated cube:
 
-The side number two is actually behin the side number 4.:
+![Cube animation](Cube3DCA/DemoImages/CoreAnimation_3D_Cube.gif)
 
-![Cube Flattened](../main/Cube3DCA/DemoImages/cube_iOS_flat_2.png)
+## macOS Notes
 
-As you can see here:
+The macOS target is present, but the layer transforms do not match the iOS
+result. The screenshots below are kept as debugging notes rather than polished
+output.
 
-![Cube 3D Animating](../main/Cube3DCA/DemoImages/CoreAnimation_3D_Cube.gif)
+![macOS flattened issue](Cube3DCA/DemoImages/cube_macOS_flat_messed_up.png)
 
-The `macOS` version does not work yet.
-I guess the `sublayerTransform` property is not working, and the transforms don't look the same.
+![macOS 3D issue](Cube3DCA/DemoImages/cube_macOS_3D_messed_up.png)
 
-The flattened version does not respect anchor points and positions.
+## Status
 
-![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_flat_messed_up.png)
+This is a historical demo, not an actively maintained package. Issues and pull
+requests are still welcome if you are using it as a reference.
 
-The 3D version is transformed incorrectly.
-
-![Cube Flattened](../main/Cube3DCA/DemoImages/cube_macOS_3D_messed_up.png)
-
-Forks and PRs are more than welcome!!
-
-[Here's the link to YouTube]( https://www.youtube.com/watch?v=exIGbi36_bk)
+Video: [YouTube demo](https://www.youtube.com/watch?v=exIGbi36_bk)
